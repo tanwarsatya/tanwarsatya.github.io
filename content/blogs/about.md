@@ -8,4 +8,4 @@ author = "Hugo Authors"
 
 
 
-Just another about page
+Just another about page for the test
