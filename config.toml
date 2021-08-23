@@ -7,4 +7,4 @@ theme = 'mainroad'
   #image = "img/placeholder.png" # Logo image. Path relative to "static"
   title = "Satya's Tekblog" # Logo title, otherwise will use site title
   #subtitle = "A technical blog focused on cloud native, Kubernetes, containers, and Microservices" # Logo subtitle
-  subtitle = "A technical blog focused on my technology encounters" # Logo subtitle
+  subtitle = "A technical blog about my daily encounters with technology." # Logo subtitle
