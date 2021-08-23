@@ -1,4 +1,10 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://blog.satyatanwar.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Satya's Tekblog"
 theme = 'mainroad'
+
+[Params.logo]
+  #image = "img/placeholder.png" # Logo image. Path relative to "static"
+  title = "Satya's Tekblog" # Logo title, otherwise will use site title
+  #subtitle = "A technical blog focused on cloud native, Kubernetes, containers, and Microservices" # Logo subtitle
+  subtitle = "A technical blog focused on my technology encounters" # Logo subtitle
