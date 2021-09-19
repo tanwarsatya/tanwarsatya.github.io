@@ -1,6 +1,6 @@
-baseURL = 'https://blog.satyatanwar.com'
+baseURL = 'https://blog.exemplars.io'
 languageCode = 'en-us'
-title = "Satya's Weblog"
+title = "Exemplars | Satya Tanwar's Tech Blog"
 theme = 'mainroad'
 
 #menu items
@@ -101,7 +101,7 @@ theme = 'mainroad'
 [Params]
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
   description = "Satya Tanwar's blog about technology" # Site description. Used in meta description
-  copyright = "Satya Tanwar" # Footer copyright holder, otherwise will use site title
+  copyright = "Exemplars.io" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -137,10 +137,11 @@ theme = 'mainroad'
 
 
 [Params.logo]
-  image = "img/profile.jpg" # Logo image. Path relative to "static"
-  title = "Satya's Weblog" # Logo title, otherwise will use site title
-  #subtitle = "A technical blog focused on cloud native, Kubernetes, containers, and Microservices" # Logo subtitle
-  subtitle = "A blog focused on daily technology encounters." # Logo subtitle
+  image = "img/icon.svg" # Logo image. Path relative to "static"
+  #title = "Satya Tanwar's Weblog" # Logo title, otherwise will use site title
+  #subtitle = "A blog about learnings in technology & architecture." # Logo subtitle
+  title = "Exemplars" # Logo title, otherwise will use site title
+  subtitle = "Satya Tanwar's Tech Blog." # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
@@ -159,8 +160,8 @@ theme = 'mainroad'
 
 
 [[Params.widgets.social.custom]]
-  title = "My Home Page"
-  url = "http://example.com"
+  title = "Home Page"
+  url = "https://blog.examplars.io"
 
 
 

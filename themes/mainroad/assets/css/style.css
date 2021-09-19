@@ -402,7 +402,7 @@ select {
 }
 
 .logo__img {
-	max-height: 256px;
+	max-height: 128px;
 }
 
 .logo__text {
