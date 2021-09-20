@@ -36,19 +36,6 @@ theme = 'mainroad'
     url = "/tags/gcp"
     parent = "cloud"
     weight = 1
-  
-   ## Cloud Native
-  [[menu.main]]
-    identifier = "cloudnative"
-    name = "Cloud Native"
-    url = "/cloudnative"
-    weight = 3
-  [[menu.main]]
-    identifier = "kubernetes"
-    name = "Kubernetes"
-    url = "/tags/kubernetes"
-    parent = "cloudnative"
-    weight = 1
   [[menu.main]]
     identifier = "aws"
     name = "Aws"
@@ -70,32 +57,48 @@ theme = 'mainroad'
     name = "Architecture"
     url = "/tags/architecture"
     weight = 9
+  
+  [[menu.main]]
+    identifier = "cloudnative"
+    name = "CloudNative"
+    url = "/tags/cloudnative"
+    parent = "architecture"
+    weight = 1  
+
   [[menu.main]]
     identifier = "microservices"
     name = "Microservices"
     url = "/tags/microservices"
     parent = "architecture"
-    weight = 1
+    weight = 2
+  
    [[menu.main]]
     identifier = "eventdriven"
     name = "Event Driven"
     url = "/tags/eventdriven"
     parent = "architecture"
-    weight = 2
+    weight = 3
+  
    [[menu.main]]
     identifier = "serverless"
     name = "Serverless"
     url = "/tags/serverless"
     parent = "architecture"
-    weight = 3
+    weight = 4
    
-  
+  ## Life Menu
+  [[menu.main]]
+    identifier = "social"
+    name = "Social"
+    url = "/tags/social"
+    weight = 10
+
   ## About Menu
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/tags/about"
-    weight = 10
+    weight = 20
 
 
 [Params]
@@ -138,8 +141,8 @@ theme = 'mainroad'
 
 [Params.logo]
   image = "img/logo.png" # Logo image. Path relative to "static"
-  title = "The way I See It ..." # Logo title, otherwise will use site title
-  subtitle = "Satya Tanwar's opinonated tech blog." # Logo subtitle
+  title = "The way I See It." # Logo title, otherwise will use site title
+  subtitle = "Satya Tanwar's opinonated blog." # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
