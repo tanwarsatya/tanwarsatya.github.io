@@ -1,6 +1,6 @@
 baseURL = 'https://blog.exemplars.io'
 languageCode = 'en-us'
-title = "Satya Tanwar's Tech Blog"
+title = "Satya Tanwar's Tech & Social Blog"
 theme = 'mainroad'
 
 #menu items
@@ -103,7 +103,7 @@ theme = 'mainroad'
 
 [Params]
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
-  description = "Satya Tanwar's opinonated tech blog." # Site description. Used in meta description
+  description = "Satya Tanwar's Tech & Social Blog." # Site description. Used in meta description
   copyright = "satyatanwar.com" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
@@ -142,7 +142,7 @@ theme = 'mainroad'
 [Params.logo]
   image = "img/logo.png" # Logo image. Path relative to "static"
   title = "The way I See It." # Logo title, otherwise will use site title
-  subtitle = "Satya Tanwar's opinonated blog." # Logo subtitle
+  subtitle = "Satya Tanwar's Tech & Social Blog" # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
