@@ -1,6 +1,6 @@
 baseURL = 'https://blog.exemplars.io'
 languageCode = 'en-us'
-title = "Satya Tanwar's Tech & Social Blog"
+title = "Satya Tanwar - On Tech And Life"
 theme = 'mainroad'
 
 #menu items
@@ -141,8 +141,8 @@ theme = 'mainroad'
 
 [Params.logo]
   image = "img/logo.png" # Logo image. Path relative to "static"
-  title = "Succinct Architecture" # Logo title, otherwise will use site title
-  subtitle = "Satya Tanwar's Opinionated Technology Blog" # Logo subtitle
+  title = "On Tech and Life" # Logo title, otherwise will use site title
+  subtitle = "Satya Tanwar's Opinionated Blog" # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
