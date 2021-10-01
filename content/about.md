@@ -4,10 +4,14 @@ draft: false
 description: This is an about me page
 post_meta: false
 authorbox: false 
-
+sidebar: false
+menu: 
+  main:
+    name: About Me
+    weight: 100
 ---
 
-Welcome. I'm Satya Tanwar, author of this blog.
+Welcome!! :nerd_face: I'm Satya Tanwar, author of this blog.
 
 I'm currently a Lead Cloud Architect with Humana Inc. I've held many different roles in IT, including Solution Architect, Technical Architect, and Integration Consultant. For updated information, please see my [LinkedIn](https://www.linkedin.com/in/satyatanwar/) profile.
 

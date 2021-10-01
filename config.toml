@@ -2,7 +2,7 @@ baseURL = 'https://blog.exemplars.io'
 languageCode = 'en-us'
 title = "Satya Tanwar - On Tech And Life"
 theme = 'mainroad'
-
+enableEmoji = true
 #menu items
 
 [menu]
@@ -13,92 +13,40 @@ theme = 'mainroad'
     weight = 1
 
   ## Cloud Menu
-  [[menu.main]]
-    identifier = "cloud"
-    name = "Cloud"
-    url = "/cloud"
-    weight = 2
-  [[menu.main]]
-    identifier = "azure"
-    name = "Azure"
-    url = "/tags/azure"
-    parent = "cloud"
-    weight = 1
-  [[menu.main]]
-    identifier = "aws"
-    name = "Aws"
-    url = "/tags/aws"
-    parent = "cloud"
-    weight = 1
-  [[menu.main]]
-    identifier = "gcp"
-    name = "Gcp"
-    url = "/tags/gcp"
-    parent = "cloud"
-    weight = 1
-  [[menu.main]]
-    identifier = "aws"
-    name = "Aws"
-    url = "/tags/aws"
-    parent = "cloud"
-    weight = 1
-  [[menu.main]]
-    identifier = "gcp"
-    name = "Gcp"
-    url = "/tags/gcp"
-    parent = "cloud"
-    weight = 1
+  #[[menu.main]]
+  #  identifier = "cloud"
+  #  name = "Cloud"
+  #  url = "/post/cloud/"
+  #  weight = 2
   
-
   ## Architecture Menu
 
-  [[menu.main]]
-    identifier = "architecture"
-    name = "Architecture"
-    url = "/tags/architecture"
-    weight = 9
-  
-  [[menu.main]]
-    identifier = "cloudnative"
-    name = "CloudNative"
-    url = "/tags/cloudnative"
-    parent = "architecture"
-    weight = 1  
+  #[[menu.main]]
+  #  identifier = "architecture"
+  #  name = "Architecture"
+  #  url = "/post/architecture"
+  #  weight = 9
+     
+ ## Life Menu
+  #[[menu.main]]
+  #  identifier = "devops"
+  #  name = "Devops"
+  #  url = "/post/devops"
+  #  weight = 10
 
-  [[menu.main]]
-    identifier = "microservices"
-    name = "Microservices"
-    url = "/tags/microservices"
-    parent = "architecture"
-    weight = 2
-  
-   [[menu.main]]
-    identifier = "eventdriven"
-    name = "Event Driven"
-    url = "/tags/eventdriven"
-    parent = "architecture"
-    weight = 3
-  
-   [[menu.main]]
-    identifier = "serverless"
-    name = "Serverless"
-    url = "/tags/serverless"
-    parent = "architecture"
-    weight = 4
-   
   ## Life Menu
-  [[menu.main]]
-    identifier = "social"
-    name = "Social"
-    url = "/tags/social"
-    weight = 10
+  #[[menu.main]]
+  #  identifier = "social"
+  #  name = "Social"
+  #  url = "/post/social"
+  #  weight = 10
 
   ## About Menu
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 20
+  #[[menu.main]]
+  #  identifier = "about"
+  #  name = "About"
+  #  url = "/about/"
+  #  weight = 20
 
 
 [Params]
@@ -108,12 +56,13 @@ theme = 'mainroad'
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
-  readmore = false # Show "Read more" button in list if true
+  readmore = true # Show "Read more" button in list if true
+  summaryLength = 10
   authorbox = false # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
   post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["posts", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  mainSections = ["posts", "cloud", "architecture", "social"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "2006-01-02" # Change the format of dates
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
@@ -122,6 +71,10 @@ theme = 'mainroad'
   highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
+
+
+[Params.thumbnail]
+  visibility = ["list"]
 
 [Author] # Used in authorbox
   name = "Satya Tanwar"
@@ -146,23 +99,24 @@ theme = 'mainroad'
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
-  list = "left"  # Configure layout for list pages
-  single = false # Configure layout for single pages
+  list = "right"  # Configure layout for list pages
+  single = "right"  # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["recent", "categories", "taglist", "social"]
+  #widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
   # alternatively "ddg-search" can be used, to search via DuckDuckGo
   # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  categories_counter = false # Enable counter for each category in "Categories" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
+  categories_counter = true # Enable counter for each category in "Categories" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget
 
 
 
-[[Params.widgets.social.custom]]
-  title = "Home Page"
-  url = "https://blog.satyatanwar.com"
+#[[Params.widgets.social.custom]]
+# title = "Home Page"
+#  url = "https://blog.satyatanwar.com"
 
 
 
