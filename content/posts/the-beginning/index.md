@@ -2,6 +2,7 @@
 title: "The Beginning"
 date: 2021-08-30T06:15:36-04:00
 draft: false
+socialshare: true
 categories:
   - "social"
   - "personal"

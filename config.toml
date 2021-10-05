@@ -1,8 +1,9 @@
-baseURL = 'https://blog.exemplars.io'
+baseURL = 'https://blog.satyatanwar.com'
 languageCode = 'en-us'
 title = "Satya Tanwar - On Tech And Life"
 theme = 'mainroad'
 enableEmoji = true
+googleAnalytics = "UA-15642756"  # Get this Tracking-ID from your google analytics account
 #menu items
 
 [menu]
@@ -12,57 +13,19 @@ enableEmoji = true
     url = "/"
     weight = 1
 
-  ## Cloud Menu
-  #[[menu.main]]
-  #  identifier = "cloud"
-  #  name = "Cloud"
-  #  url = "/post/cloud/"
-  #  weight = 2
-  
-  ## Architecture Menu
-
-  #[[menu.main]]
-  #  identifier = "architecture"
-  #  name = "Architecture"
-  #  url = "/post/architecture"
-  #  weight = 9
-     
- ## Life Menu
-  #[[menu.main]]
-  #  identifier = "devops"
-  #  name = "Devops"
-  #  url = "/post/devops"
-  #  weight = 10
-
-  ## Life Menu
-  #[[menu.main]]
-  #  identifier = "social"
-  #  name = "Social"
-  #  url = "/post/social"
-  #  weight = 10
-
-  ## About Menu
-  #[[menu.main]]
-  #  identifier = "about"
-  #  name = "About"
-  #  url = "/about/"
-  #  weight = 20
-
 
 [Params]
-  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
   description = "Satya Tanwar's Tech & Social Blog." # Site description. Used in meta description
   copyright = "satyatanwar.com" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
   readmore = true # Show "Read more" button in list if true
-  summaryLength = 10
   authorbox = false # Show authorbox at bottom of pages if true
   toc = true # Enable Table of Contents
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
   post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["posts", "cloud", "architecture", "social"] # Specify section pages to show on home page and the "Recent articles" widget
+  mainSections = ["posts"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "2006-01-02" # Change the format of dates
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
@@ -71,6 +34,7 @@ enableEmoji = true
   highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
+
 
 
 [Params.thumbnail]
@@ -102,7 +66,7 @@ enableEmoji = true
   list = "right"  # Configure layout for list pages
   single = "right"  # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["recent", "categories", "taglist", "social"]
+  widgets = ["social", "recent", "categories", "taglist",]
   #widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
   # alternatively "ddg-search" can be used, to search via DuckDuckGo
   # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
@@ -113,11 +77,10 @@ enableEmoji = true
   tags_counter = true # Enable counter for each tag in "Tags" widget
 
 
-
-#[[Params.widgets.social.custom]]
-# title = "Home Page"
-#  url = "https://blog.satyatanwar.com"
-
+[Params.social.share]
+  linkedin = true
+  twitter = true
+ 
 
 
 
