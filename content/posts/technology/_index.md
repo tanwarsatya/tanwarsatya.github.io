@@ -1,7 +1,7 @@
 ---
 title: "All Posts About Technology"
 draft: false
-description: This page is to show all  Technology posts
+description: This page is to show all Technology posts
 post_meta: false
 authorbox: false 
 menu: 
