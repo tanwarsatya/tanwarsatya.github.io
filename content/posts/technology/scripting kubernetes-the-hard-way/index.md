@@ -343,7 +343,7 @@ For a successful installation follow the steps in the specified order
 
   ![verify cluster](img/verify-cluster.gif "verify cluster")
 
-:boom: Awesome you should have a working cluster now. Sometimes the nodes may have a status not ready when you use lower configuration for your Linux nodes. Give it some time and use the kubectl to get the node status in 2-3 minutes. The script updated the local kubeconfig so that you can use kubectl from WSL shell. Once you have a working cluster feel free to experiment and tinker with ***[variables.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/variables.sh)*** file and other scripts in different folders to get a better understanding of the steps required to install kubernetes manually.
+:boom: Awesome you should have a working cluster now. Sometimes the nodes may have a status not ready when you use lower configuration for your Linux nodes. Give it some time and use the kubectl to get the node status in 2-3 minutes. The script updated the local kubeconfig so that you can use kubectl from WSL shell. Once you have a working cluster feel free to experiment and tinker with ***[variables.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/variables.sh)*** file and other scripts in different folders to get a better understanding of the steps required to install kubernetes manually. Scripts can be executed again to reset the cluster to initial state. In case for any reason if cluster is not showing ready status, please try to run the scripts again as that fixes any intermittent issue with the installation. You can also run individual scripts as well to just install the specific component and verify them at your own pace. Fork the repo and change the scripts to learn more.
 
 ## Summary
 
