@@ -22,7 +22,7 @@ I have debated with myself for a long time before committing to sharing my tech 
 
 <!--more-->
 
-Recently moving to a new role in a new organization after 10+ years, I felt it's important to keep track of my journey in the ever-changing technical landscape. In the last couple of years, my role has evolved from a middleware expert resolving complex production issues to a technology advocate who principally believes in doing it right the first time.  As part of this blog, I will be sharing my day-to-day learnings based on my professional experience. 
+Recently moving to a new role in a new organization after 10+ years, I felt it's important to keep track of my journey in the ever-changing technical landscape. In the last couple of years, my role has evolved from a middleware expert resolving complex production issues to a technology advocate who principally believes in doing it right the first time.  As part of this blog, I will be sharing my day-to-day learnings based on my professional experience.
 
 On the personnel front, I believe we all are connected and have to find the true purpose of life. As humans, there are two kinds of experience we gain in our daily life. One connects us with the outer world, and the other connects us with our inner world. With the start of this blog, I am looking forward to sharing my experiences and learn from yours.
 

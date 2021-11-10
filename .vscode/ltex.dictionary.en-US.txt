@@ -1,0 +1,9 @@
+kubernetes
+kube-apiserver
+Multipass
+cfssl
+cfssjson
+json
+cfssljson
+kubeconfig
+kubectl
