@@ -78,6 +78,7 @@ googleAnalytics = "UA-15642756"  # Get this Tracking-ID from your google analyti
   description = "Satya Tanwar's Tech & Social Blog." # Site description. Used in meta description
   copyright = "satyatanwar.com" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
+  tags = false # show tags on each post
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
   readmore = true # Show "Read more" button in list if true
@@ -140,6 +141,8 @@ googleAnalytics = "UA-15642756"  # Get this Tracking-ID from your google analyti
 [Params.social.share]
   linkedin = true
   twitter = true
+  whatsapp = true
+  email = true
  
 
 

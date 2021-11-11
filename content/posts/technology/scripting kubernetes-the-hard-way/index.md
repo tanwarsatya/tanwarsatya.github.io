@@ -3,6 +3,7 @@ title: "Scripting kubernetes-the-hard-way"
 date: 2021-11-09T06:15:36-04:00
 draft: false
 socialshare: true
+thumbnail: "img/thumbnails/kubernetes.png"
 categories:
   - "kubernetes"
   - "technology"

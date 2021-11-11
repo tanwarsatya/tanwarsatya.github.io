@@ -27,7 +27,16 @@
       </li>
       {{ end }}
 
-      
+       <!-- WhatsApp -->
+       {{ if .Site.Params.social.share.whatsapp }}
+       <li>
+         <a href="whatsapp://send?text={{ $body }}" target="_blank" class="share-btn whatsapp">
+           {{ partial "svg/whatsapp.svg" (dict "class" "widget-social__link-icon") }}
+           <p>Email</p>
+         </a>
+       </li>
+       {{ end }}
+       
       <!-- Email -->
       {{ if .Site.Params.social.share.email }}
       <li>
