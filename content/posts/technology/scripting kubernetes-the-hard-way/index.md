@@ -4,18 +4,20 @@ date: 2021-11-09T06:15:36-04:00
 draft: false
 socialshare: true
 categories:
-  - "series"
   - "kubernetes"
   - "technology"
+  - "November, 2021"
+  - "2021"
 tags:
-  - "series"
   - "kubernetes"
-  - "technology"
   - "automation"
   - "bash"
+  - "CKA"
+  - "CKS"
+  - "CKAD"
 ---
 
-During preparation for my **Certified Kubernetes Administrator** (CKAD) and **Certified Kubernetes Security Specialist** (CKS) exams I realized the value of having a local Kubernetes cluster that can be used to experiment. Initially, I followed the instructions from [kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower** and manually built a local cluster on my Windows 10 laptop. It was a great starting point to experiment, but I faced many challenges with the manual installation. While experimenting much of my time was getting wasted in either identifying the changes that made the cluster unusable or in rebuilding the cluster again when not able to find the root cause of failure. This made me realize that I need an automated and repeatable solution to build a local cluster. As the process may allow me to focus on experimenting with various Kubernetes concepts instead of fixing or building clusters if some issue occurs.
+During preparation for my **Certified Kubernetes Administrator** (CKA), **Certified Kubernetes Developer** (CKAD) and **Certified Kubernetes Security Specialist** (CKS) exams I realized the value of having a local Kubernetes cluster that can be used to experiment. Initially, I followed the instructions from [kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower** and manually built a local cluster on my Windows 10 laptop. It was a great starting point to experiment, but I faced many challenges with the manual installation. While experimenting much of my time was getting wasted in either identifying the changes that made the cluster unusable or in rebuilding the cluster again when not able to find the root cause of failure. This made me realize that I need an automated and repeatable solution to build a local cluster. As the process may allow me to focus on experimenting with various Kubernetes concepts instead of fixing or building clusters if some issue occurs.
 <!--more-->
 
 ## The Plan
@@ -344,4 +346,4 @@ For a successful installation follow the steps in the specified order
 
 ## Summary
 
-[kubernetes-the hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower** is the gold standard for learning internals of Kubernetes working. You can avoid the time-consuming nature of Kubernetes installation by utilizing the scripts I developed. These scripts closely follow the ***Kelsey Hightower's** steps and allow any kind of experimentation you want to try. Scripts are available as part of [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository on **GitHub.com**. I hope this will save some of your valuable time and don't forget to share this blog and scripts if this helped you in your learning :thumbsup:.
+[kubernetes-the hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower** is the gold standard for learning internals of Kubernetes working. You can avoid the time-consuming nature of Kubernetes installation by utilizing the scripts I developed. These scripts closely follow the **Kelsey Hightower's** steps and allow any kind of experimentation you want to try. Scripts are available as part of [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository on GitHub.com. I hope this will save some of your valuable time and don't forget to share this blog and scripts if this helped you in your learning :thumbsup:.

@@ -5,8 +5,9 @@ draft: false
 socialshare: true
 categories:
   - "social"
-  - "personal"
   - "technology"
+  - "September, 2021"
+  - "2021"
 tags:
   - "social"
   - "personal"
