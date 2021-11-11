@@ -14,7 +14,6 @@ tags:
   - "automation"
   - "bash"
 ---
-## The Challenge
 
 During preparation for my **Certified Kubernetes Administrator** (CKAD) and **Certified Kubernetes Security Specialist** (CKS) exams I realized the value of having a local Kubernetes cluster that can be used to experiment. Initially, I followed the instructions from [kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower** and manually built a local cluster on my Windows 10 laptop. It was a great starting point to experiment, but I faced many challenges with the manual installation. While experimenting much of my time was getting wasted in either identifying the changes that made the cluster unusable or in rebuilding the cluster again when not able to find the root cause of failure. This made me realize that I need an automated and repeatable solution to build a local cluster. As the process may allow me to focus on experimenting with various Kubernetes concepts instead of fixing or building clusters if some issue occurs.
 <!--more-->
