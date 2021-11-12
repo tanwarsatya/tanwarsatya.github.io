@@ -7,7 +7,6 @@ thumbnail: "img/thumbnails/kubernetes.png"
 categories:
   - "kubernetes"
   - "technology"
-  - "November, 2021"
   - "2021"
 tags:
   - "kubernetes"

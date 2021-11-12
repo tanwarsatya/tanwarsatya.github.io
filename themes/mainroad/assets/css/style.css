@@ -658,13 +658,14 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__thumbnail {
-	max-width: 1030px;
+	max-width: 300px;
 	margin: 0 0 20px;
 	margin-bottom: 0 0 1.25rem;
 }
 
 .post__thumbnail img {
-	width: 100%;
+	width: ;
+	height: 150px;
 }
 
 .content a,

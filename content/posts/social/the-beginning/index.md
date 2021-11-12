@@ -3,10 +3,11 @@ title: "The Beginning"
 date: 2021-09-30T06:15:36-04:00
 draft: false
 socialshare: true
+noComment: true
+thumbnail: "img/thumbnails/beginning.jpg"
 categories:
   - "social"
   - "technology"
-  - "September, 2021"
   - "2021"
 tags:
   - "social"

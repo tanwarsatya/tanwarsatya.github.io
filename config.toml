@@ -41,7 +41,7 @@ googleAnalytics = "UA-15642756"  # Get this Tracking-ID from your google analyti
 
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
 
 
@@ -94,7 +94,7 @@ googleAnalytics = "UA-15642756"  # Get this Tracking-ID from your google analyti
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
   highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
   customCSS = ["css/custom.css"] # Include custom CSS files
-  customJS = ["js/custom.js"] # Include custom JS files
+ 
 
 
 
