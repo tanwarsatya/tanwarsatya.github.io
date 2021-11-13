@@ -714,14 +714,15 @@ select {
 }
 
 .post__thumbnail {
-	max-width: 1030px;
-	margin: 0 0 20px;
-	margin-bottom: 0 0 1.25rem;
+	
+	height: 32px;
+	width: 32px;
+	height: 2.3rem;
+	width: 2.3rem;
+	float: left;
+	margin-right: 10px
 }
 
-.post__thumbnail img {
-	width: 100%;
-}
 
 .content a,
 .warning a,

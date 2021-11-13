@@ -664,7 +664,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__thumbnail img {
-	width: ;
+	width: 100px;
 	height: 150px;
 }
 
@@ -900,13 +900,15 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .list__thumbnail img {
-	width: 100%;
-	max-width: 235px;
+	width: 48px;
+	max-width: 48px;
 }
 
 .list__footer-readmore {
-	float: left;
+	float: right;
 	margin-top: 10px;
+	font-weight: bold;
+	color: #e22d30;c;
 }
 
 /* Pagination */
