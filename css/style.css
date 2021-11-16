@@ -99,6 +99,7 @@ body {
 
 .clearfix {
 	display: block;
+	text-align: justify;
 }
 
 .clearfix::after {
