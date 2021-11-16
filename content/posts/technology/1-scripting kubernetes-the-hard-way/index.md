@@ -113,6 +113,7 @@ Following are the prerequisites required for installation
 >
 >    ![vm ssh](img/vm-ssh.jpg "vm ssh")
 
+---
 ## Structure
 
 The scripts are arranged as per the below structure and grouped mainly under **3 folders** and various **numbered scripts**. In the following section, I am going to review the purpose of the specific folder/files. You should be able to click on the link, and it will take you to the correct artifact in the repository.
@@ -273,5 +274,7 @@ k8s-bare-metal
   
    [4_verify_cluster.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/4_verify_cluster.sh) validates the cluster by checking various kubernetes services status, nodes status and also deploy random number of nginx pods to make sure cluster is up and running.
 
-  In upcoming second part  [2 - Scripting kubernetes-the-hard-way](/posts/technology/2-scripting-kubernetes-the-hard-way/) of this blog, I will explain the requirements and go through the installation steps. Scripts are available as part of [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository on GitHub.com.
+---
+
+  In upcoming second part [2 - Scripting kubernetes-the-hard-way](/posts/technology/2-scripting-kubernetes-the-hard-way/) of this blog, I will explain the requirements and go through the installation steps. Again just to mention scripts are available as part of [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository on GitHub.com.
   

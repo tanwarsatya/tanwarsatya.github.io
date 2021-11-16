@@ -18,10 +18,10 @@ tags:
   - "scripting"
 ---
 
-In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1-scripting-kubernetes-the-hard-way/) we discussed the issue in resolving the cluster setup issues when following the instructions from [kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower**. As a solution, I came up with a set of bash scripts to automate the steps. Later we reviewed the structure and purpose of the scripts. In this part, we will look at the different requirements and perform the installation.
+In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1-scripting-kubernetes-the-hard-way/) we discussed why I developed the scripts to save time when experimenting with local kubernetes, and later we reviewed the structure and purpose of the scripts. In this part, we will continue looking at the requirements for installation and alter perform the installation.
 
 <!--more-->
-
+---
 ## Requirements
 
 >Installation can be done with any of the following suggested configurations, and the Linux nodes' requirements directly depend on the configuration selected. Use any of the suggested node configurations for installation. If choosing a configuration that uses more nodes you can lower down the CORE, RAM, and DISK requirements mentioned below.
@@ -38,6 +38,7 @@ In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1
 >
 >- ***Realistic*** - 8 Linux nodes are required for the realistic installation of the Kubernetes cluster. 2 Linux nodes will host ETCD components in a highly available configuration. 2 Linux nodes will host control-plane components in a highly available configuration. 1 Linux will host haproxy for being a proxy to access kube-apiserver in a load-balanced way. 3 worker nodes will be used for application/pods deployments.
 
+---
 ## The Installation
 
 For a successful installation first prepare the environment and later perform the execution of steps in given order
@@ -48,7 +49,7 @@ For a successful installation first prepare the environment and later perform th
 
 - Make sure you can ssh into the VMs created via key-based authentication, as the same method will be used by the scripts to remotely install and configure the components.
 
-- Clone the [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository to your WSL environment.
+- Clone the [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository to your shell environment.
 
   ![Clone repo](img/clone-repo.gif "clone repo")
 
@@ -73,6 +74,14 @@ For a successful installation first prepare the environment and later perform th
   declare -a WORKER_PLANE_NODES=("k8s-node-1" "k8s-node-2")
   CLUSTER_API_LOAD_BALANCER="k8s-master-1"
 
+  #Network Range and CNI
+  #############################################
+  # Cluster cidr
+  CLUSTER_CIDR="10.32.0.0/12"
+  # Cluster Service CIDR
+  CLUSTER_SVC_CIDR="10.32.0.0/16"
+  # choose a provide from list [kube-router , calico , cilium ]
+  CLUSTER_CNI_PROVIDER="cilium"
   ```
 
 ### Execution
@@ -95,8 +104,11 @@ Execute the following steps in defined order, in case you encounter any error re
 
   ![verify cluster](img/verify-cluster.gif "verify cluster")
 
+
+
 :boom: Awesome you should have a working cluster now. Sometimes the nodes may have a status not ready when you use lower configuration for your Linux nodes. Give it some time and use the kubectl to get the node status in 2-3 minutes. The script updates the local kubeconfig so that you can use kubectl from the WSL shell. Once you have a working cluster feel free to experiment and tinker with ***[variables.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/variables.sh)*** file and other scripts in different folders to get a better understanding of the steps required to install Kubernetes manually. Scripts are idempotent and can be executed multiple times, which will reset the cluster to its initial state. In case for any reason if the cluster is not showing ready status, please try to run the scripts again as that fixes an intermittent issue with the installation. You can run individual scripts as well to just install the specific component and verify them at your own pace. Fork the repo and change the scripts to learn more.
 
+---
 ## Summary
 
 [kubernetes-the hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) by **Kelsey Hightower** is the gold standard for learning internals of Kubernetes working. You can avoid the time-consuming nature of Kubernetes installation by utilizing the scripts I developed. These scripts closely follow the **Kelsey Hightower's** steps and allow any kind of experimentation you want to try. Scripts are available as part of [k8s-bare-metal](https://github.com/tanwarsatya/k8s-bare-metal) repository on GitHub.com. I hope this will save some of your valuable time and don't forget to share this blog and scripts if this helped you in your learning :thumbsup:.
