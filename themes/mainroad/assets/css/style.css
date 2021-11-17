@@ -979,6 +979,8 @@ img {
 	vertical-align: bottom;
 }
 
+
+
 iframe,
 embed,
 object,
@@ -1455,3 +1457,11 @@ ul.share-icons li > * .label {
 .share-btn.pinterest:hover   { background: #AD0000; }
 .share-btn.reddit:hover      { background: #e54e00; }
 .share-btn.email:hover       { background: #363636; }
+
+.centerimg {
+	width: auto\9; /* ie8 */
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

@@ -1,7 +1,7 @@
 ---
 title: "2 - Scripting kubernetes-the-hard-way"
-date: 2021-11-20T06:15:36-04:00
-draft: true
+date: 2021-11-17T06:15:36-04:00
+draft: false
 socialshare: true
 thumbnail: "img/thumbnails/kubernetes.png"
 categories:
@@ -18,7 +18,7 @@ tags:
   - "scripting"
 ---
 
-In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1-scripting-kubernetes-the-hard-way/) we discussed why I developed the scripts to save time when experimenting with local kubernetes, and later we reviewed the structure and purpose of the scripts. In this part, we will continue looking at the requirements for installation and alter perform the installation.
+In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1-scripting-kubernetes-the-hard-way/) we discussed that I developed the scripts to save time when experimenting with local kubernetes, and later we reviewed the structure and purpose of the scripts. In this part, we will continue looking at the requirements for installation and alter perform the installation.
 
 <!--more-->
 ---
@@ -30,14 +30,26 @@ In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1
 >
 >- ***Bare Minimum*** - 1 Linux node is required for the bare minimum installation of the Kubernetes cluster. This single node will host all the control-plane components and worker-plane components. Any applications/pod deployed will run on this node.
 >
+> <img src="img/bare-minimum.svg" class="centerimg">
+>  
+>
 >- ***Suggested Minimal*** - 2 Linux nodes are required for the suggested minimal installation of the Kubernetes cluster. 1st Linux node will host all the control-plane and the 2nd Linux node will host all the worker-plane components. Based on configuration application/pods can be deployed on worker-node or both the nodes.
 >
+>
+> <img src="img/sug-minimal.svg" class="centerimg">
+> 
 >- ***Standard*** - 3 Linux nodes are required for the standard installation of the Kubernetes cluster. 1st Linux node will host all the control-plane and the 2 Linux nodes will host the worker-plane components. 2 worker-nodes will be used for application/pods deployments.
+>
+> <img src="img/standard.svg" class="centerimg">
 >
 >- ***Optimal*** - 6 Linux nodes are required for the optimal installation of the Kubernetes cluster. 2 Linux nodes will host control-plane components in a highly available configuration. 1 Linux will host haproxy for being a proxy to access kube-apiserver in a load balanced way. 3 worker nodes will be used for application/pods deployments.
 >
+> <img src="img/optimal.svg" class="centerimg">
+> 
 >- ***Realistic*** - 8 Linux nodes are required for the realistic installation of the Kubernetes cluster. 2 Linux nodes will host ETCD components in a highly available configuration. 2 Linux nodes will host control-plane components in a highly available configuration. 1 Linux will host haproxy for being a proxy to access kube-apiserver in a load-balanced way. 3 worker nodes will be used for application/pods deployments.
-
+>
+> <img src="img/realistic.svg" class="centerimg">
+> 
 ---
 ## The Installation
 
