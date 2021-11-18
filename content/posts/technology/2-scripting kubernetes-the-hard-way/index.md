@@ -18,7 +18,7 @@ tags:
   - "scripting"
 ---
 
-In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1-scripting-kubernetes-the-hard-way/) we discussed that I developed the scripts to save time when experimenting with local kubernetes, and later we reviewed the structure and purpose of the scripts. In this part, we will continue looking at the requirements for installation and alter perform the installation.
+In the earlier post, [1 - Scripting kubernetes-the-hard-way](/posts/technology/1-scripting-kubernetes-the-hard-way/) we discussed that I developed the scripts to save time when experimenting with local kubernetes, and later we reviewed the structure and purpose of the scripts. In this part, we will continue looking at the requirements for installation and perform the installation afterwards.
 
 <!--more-->
 ---
