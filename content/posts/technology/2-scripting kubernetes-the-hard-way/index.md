@@ -104,11 +104,11 @@ Execute the following steps in defined order, in case you encounter any error re
 
   ![install control plane](img/install-control-plane.gif "install ontrol plane")
 
-- Execute the script [2_install_worker_plane.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/2_install_worker_plane.sh) to install control-plane components
+- Execute the script [2_install_worker_plane.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/2_install_worker_plane.sh) to install worker-plane components
 
   ![install worker plane](img/install-worker-plane.gif "install worker plane")
 
-- Execute the script [3_install_network_plane.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/3_install_network_plane.sh) to install control-plane components
+- Execute the script [3_install_network_plane.sh](https://github.com/tanwarsatya/k8s-bare-metal/blob/main/3_install_network_plane.sh) to install network-plane components
 
   ![install network plane](img/install-network-plane.gif "install network plane")
 
