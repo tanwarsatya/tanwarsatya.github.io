@@ -1,0 +1,1 @@
+{"rule":"IN_A_X_MANNER","sentence":"^\\QMicroservices deployed should spread equally across the multiple-zones\nMicroservices that are part of an app runs on the same node to minimize latency\nAll nodes are utilized in an efficient way to host the Microservices\nScaling up of Microservices distribute them equally across zones and nodes\\E$"}
