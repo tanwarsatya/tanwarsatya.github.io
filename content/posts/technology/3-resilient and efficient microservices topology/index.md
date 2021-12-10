@@ -1,6 +1,6 @@
 ---
 title: "Resilient and efficient microservices topology"
-date: 2021-11-19T06:15:36-04:00
+date: 2021-12-09T06:15:36-04:00
 draft: false
 socialshare: true
 thumbnail: "img/thumbnails/kubernetes.png"
