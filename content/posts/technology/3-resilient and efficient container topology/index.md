@@ -1,5 +1,5 @@
 ---
-title: "Resilient and efficient microservices topology"
+title: "Resilient and efficient container topology"
 date: 2021-12-09T06:15:36-04:00
 draft: false
 socialshare: true
@@ -18,7 +18,7 @@ tags:
   - "microservice"
 ---
 
-As part of a recent prototype activity, one of the requirements was to deploy the Microservices in an efficient and resilient manner on a Kubernetes cluster that has nodes spread across multiple zones. First, we will review various scaling scenarios required, and later in the post I will share details on how to use ***Well-Known Labels***,  ***pod topology spread constraints*** and ***pod affinity***  Kubernetes concepts to achieve our goal.
+As part of a recent prototype activity, one of the requirements was to deploy the container based Microservices in an efficient and resilient manner on a Kubernetes cluster that has nodes spread across multiple zones. First, we will review various scaling scenarios required, and later in the post I will share details on how to use ***Well-Known Labels***,  ***pod topology spread constraints*** and ***pod affinity***  Kubernetes concepts to achieve our goal.
 
 <!--more-->
 
