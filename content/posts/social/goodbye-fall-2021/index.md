@@ -1,7 +1,7 @@
 ---
 title: "Goodbye Fall 2021"
 date: 2021-11-09T06:15:36-04:00
-draft: false
+draft: true
 socialshare: true
 categories:
   - "social"
